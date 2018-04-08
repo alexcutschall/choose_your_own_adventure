@@ -1,15 +1,30 @@
 body {
   background-color: #2f302f;
 }
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 li {
-    display: inline;
     padding: 10px;
+}
+
+i {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.header {
+  text-align: center;
 }
 
 .nav {
@@ -19,7 +34,8 @@ li {
 }
 
 .login {
-  float: right;
+  display: flex;
+  flex-direction: row;
 }
 
 .button {
@@ -34,14 +50,26 @@ li {
     border-radius: 10px;
 }
 
-i {
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-}
-
 .arrow {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+}
+
+.content-section {
+  background-color: #878787;
+  margin: 20px;
+  display: inline-block;
+  border-radius: 10px;
+  margin: 100px;
+}
+
+.image-content {
+  height: 200px;
+  width: auto;
+  margin: 10px;
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-color: green;
 }
